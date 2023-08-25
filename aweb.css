@@ -1,0 +1,623 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    font-family :Times, serif ;
+    scroll-padding: 2rem;
+    box-sizing: border-box;
+}
+
+
+header{
+
+    background-color: black;
+    min-height: 7vh;
+    width : 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+
+}
+
+#logo{
+
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.info{
+    
+    padding-right: 35px;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 750;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    opacity: 80%;
+    transition: 0.5s ease;
+
+}
+
+.info:hover {
+opacity: 100%;
+}
+
+.maincontent{
+    
+    background: url(dark-road.jpg) no-repeat;
+    background-attachment: fixed;    
+    background-size: cover;
+    position: relative;
+    padding-top: 830px;
+}
+
+@keyframes effect{
+    from{opacity: 50%;}
+    to{opacity:100%;}
+}
+
+#salut2{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 600;
+    top:235px;
+    padding-left:100px;
+    letter-spacing: 2px;
+    animation-name: effect ;
+    animation-duration: 1s;
+    transition: ease;
+    text-transform: uppercase;
+}
+
+#des1{
+    color: rgb(255, 26, 26);
+    position: absolute;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    top:235px;
+    padding : 20px 52px;
+    padding-left: 100px;
+    letter-spacing: 2px;
+    animation-name: effect ;
+    animation-duration: 1s;
+    transition: ease;
+    text-transform: uppercase;
+}
+
+#des2{
+    color: rgb(255, 26, 26);
+    position: absolute;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    top:315px;
+    padding-left: 103px;
+    letter-spacing: 2px;
+    animation-name: effect ;
+    animation-duration: 1s;
+    transition: ease;
+    text-transform: uppercase;
+}
+
+#pic{
+    position: absolute;
+    left: 600px;
+    bottom: 0px;
+    width: 655px;
+    height: 900px;    
+}
+
+#btn {
+    background-color: white;
+    color: rgb(199, 11, 11);
+    font-size: 25px;
+    border-radius: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    position: absolute;
+    bottom: 415px;
+    left: 225px;
+    font-weight: 500;
+    transition: 0.7s ease;
+    cursor: pointer;
+    animation-name: effect ;
+    animation-duration: 2s;
+    
+}
+#btn:hover{
+transform: scale(1.1);
+background-color:rgb(193, 8, 8);
+color:white;
+border: solid 2px white;
+}
+
+.icons a
+{
+  font-size: 25px;
+  color: rgb(255, 164, 150);
+  padding-left: 30px;
+  padding-right: 20px;
+  position: relative;
+  bottom: 5px;
+  transition: 1s ease;
+}
+
+.icons a:hover{
+    color: whitesmoke;
+}
+
+.skills{
+    background-color: black;
+    background-size: cover;
+    width: 100%;  
+   
+}
+
+.skills h1{
+    color: yellow;
+    font-weight: 900;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+    
+.skills #GD{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.Graphic-Design{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.card1{
+    border: solid 3px white;
+    border-radius: 7px;
+    height: 400px;
+    width: 300px;
+    transition: 0.8s ease;
+
+}
+
+.card1 #manipulation{
+    color: red;
+     font-size: 125px;
+     display: flex;
+     justify-content: center;
+     padding: 50px 0;
+}
+
+.card1 h2{
+    color: red;
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+     padding: 5px 0;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+     font-weight: 600;
+     letter-spacing: 3px;
+}
+
+.card1 p{
+    color: white;
+    font-size: 20px;
+    padding-left:20px ;
+    padding-top: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 400;   
+    
+}
+
+.card1:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.card2{
+    border: solid 3px white;
+    border-radius: 7px;
+    height: 400px;
+    width: 300px;
+    transition: 0.8s ease;
+}
+.card2 #logo-design{
+    color: red;
+     font-size: 125px;
+     display: flex;
+     justify-content: center;
+     padding: 50px 0;
+}
+.card2 h2{
+    color: red;
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+     padding: 5px 0;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+     font-weight: 600;
+     letter-spacing: 3px;
+}
+.card2 p{
+    color: white;
+    font-size: 20px;
+    padding-left:20px ;
+    padding-top: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 400;   
+}
+
+.card2:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.card3{
+    border: solid 3px white;
+    border-radius: 7px;
+    height: 400px;
+    width: 300px;
+    transition: 0.8s ease;
+}
+
+.card3 #remove-bg{
+    color: red;
+     font-size: 125px;
+     display: flex;
+     justify-content: center;
+     padding: 50px 0;
+}
+
+.card3 h2{
+    color: red;
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+     padding: 5px 0;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+     font-weight: 600;
+     letter-spacing: 3px;
+}
+
+.card3 p{
+    color: white;
+    font-size: 20px;
+    padding-left:20px ;
+    padding-top: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 400;   
+    
+}
+
+.card3:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.skills #WB{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.Web-Developement{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.card1{
+    border: solid 3px white;
+    border-radius: 7px;
+    height: 400px;
+    width: 300px;
+    transition: 0.8s ease;
+}
+
+.card1 #front-end{
+    color: red;
+     font-size: 125px;
+     display: flex;
+     justify-content: center;
+     padding: 50px 0;
+}
+
+.card1 h2{
+    color: red;
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+     padding: 5px 0;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+     font-weight: 600;
+     letter-spacing: 3px;
+}
+
+.card1 p{
+    color: white;
+    font-size: 20px;
+    padding-left:20px ;
+    padding-top: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 400;   
+    
+}
+
+.card1:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.card2{
+    border: solid 3px white;
+    border-radius: 7px;
+    height: 400px;
+    width: 300px;
+    transition: 0.8s ease;
+}
+.card2 #c-project{
+    color: red;
+     font-size: 125px;
+     display: flex;
+     justify-content: center;
+     padding: 50px 0;
+}
+.card2 h2{
+    color: red;
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+     padding: 5px 0;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+     font-weight: 600;
+     letter-spacing: 3px;
+}
+.card2 p{
+    color: white;
+    font-size: 20px;
+    padding-left:20px ;
+    padding-top: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 400;   
+}
+
+.card2:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.card3{
+    border: solid 3px white;
+    border-radius: 7px;
+    height: 400px;
+    width: 300px;
+    transition: 0.8s ease;
+}
+
+.card3 #data-base{
+    color: red;
+     font-size: 125px;
+     display: flex;
+     justify-content: center;
+     padding: 50px 0;
+}
+
+.card3 h2{
+    color: red;
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+     padding: 5px 0;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+     font-weight: 600;
+     letter-spacing: 3px;
+}
+
+.card3 p{
+    color: white;
+    font-size: 20px;
+    padding-left:15px ;
+    padding-top: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 400;   
+    
+}
+
+.card3:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.about-us{
+    height: 700px;
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+}
+
+.about-us h1{
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 50px;
+    font-size: 50px;
+    letter-spacing: 5px;
+
+}
+
+.about-us p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    padding-right: 600px;
+    padding-left: 90px;
+    padding-top: 80px;
+
+}
+
+.about-us span{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#aboutmeimg{
+    height: 525px;
+display: flex; /*important in this case to remove the white space*/
+position: relative;
+bottom: 450px;
+left: 710px;
+border: double 4px red;
+border-radius: 10px;
+padding: 0 25px;
+}
+
+
+/* Your existing CSS styles here */
+
+.contact {
+    max-width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+    background-color: black;
+}
+
+
+.contact form {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+    background-color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin-top: 25px;
+    margin-left: 160px ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.6s ease;
+}
+
+.contact button:hover{
+    transform: scale(1.1);
+}
+
+#form{
+    display: flex;
+position: relative ;
+padding-left: 500px;
+bottom:350px ;
+padding-top: 50px;
+}
+
+.contact #card{
+    
+    position: relative;
+    top: 110px;
+    left: 100px;
+    width: 330px;
+    height: 450px;
+    border: solid 3px white;
+    border-radius: 10px;
+}
+
+#card i{
+    font-size: 125px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px ;
+}
+
+#card h1{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: red;
+   padding-top: 75px;
+   padding-bottom: 10px;
+   display: flex;
+   justify-content: center;
+   font-size: 35px;
+   font-weight: 800;
+}
+
+#card p{
+    color: white;
+    font-size: 22px;
+    padding-left:12px ;
+    padding-top: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 400; 
+}
+
+footer {
+    font-weight: 800;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* My firstproject using HTLM and CSS*/
+/*Misson complete !*/
+/*25/08/2023*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
